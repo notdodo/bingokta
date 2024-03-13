@@ -17,5 +17,5 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  infra-security-scan:
+  rust-ci:
     uses: notdodo/github-actions/.github/workflows/rust-ci.yml@5ec877435fa2e35aa14471c985a7aa6cd31d3069
