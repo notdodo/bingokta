@@ -22,5 +22,4 @@ concurrency:
 
 jobs:
   rust-ci:
-    uses: notdodo/github-actions/.github/workflows/rust-ci.yml@66652a523aaeca02a32279335d5addbf61090474
-    # rust-ci-v0.0.3
+    uses: notdodo/github-actions/.github/workflows/rust-ci.yml@rust-ci-v0
