@@ -1,4 +1,3 @@
-use axum::async_trait;
 use std::sync::{Arc, Mutex};
 
 use crate::application::ports::input_port::InputPort;
@@ -19,7 +18,6 @@ impl std::fmt::Debug for Bingokta {
     }
 }
 
-#[async_trait]
 impl InputPort for Bingokta {
     async fn process(&self) {
         self.increment().await;
