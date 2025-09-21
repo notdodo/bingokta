@@ -25,4 +25,5 @@ FROM scratch
 WORKDIR /app
 COPY --from=builder /app/target/x86_64-unknown-linux-musl/release/bingokta .
 HEALTHCHECK NONE
+USER scratchuser
 CMD ["./bingokta"]
