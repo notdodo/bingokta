@@ -7,7 +7,7 @@ RUN cargo install cargo-chef
 COPY . .
 RUN cargo chef prepare --recipe-path recipe.json
 
-FROM ${BASE_IMAGE} As cacher
+FROM ${BASE_IMAGE} AS cacher
 WORKDIR /app
 RUN cargo install cargo-chef
 COPY --from=planner /app/recipe.json recipe.json
