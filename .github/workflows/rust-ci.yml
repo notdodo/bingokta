@@ -22,4 +22,8 @@ concurrency:
 
 jobs:
   rust-ci:
+    permissions:
+      contents: read
+      security-events: write
+      id-token: write
     uses: notdodo/github-actions/.github/workflows/rust-ci.yml@rust-ci-v0
