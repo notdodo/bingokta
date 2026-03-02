@@ -26,7 +26,7 @@ mod tests {
 
     #[tokio::test]
     async fn the_real_deal() {
-        let server = TestServer::new(routes_default()).unwrap();
+        let server = TestServer::new(routes_default());
         let response = server.get("/ping").await;
         assert_eq!(response.status_code(), StatusCode::NO_CONTENT);
     }
