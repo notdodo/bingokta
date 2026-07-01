@@ -14,4 +14,4 @@ tower-sessions = "0.15.0"
 tracing = "0.1.40"
 
 [dev-dependencies]
-axum-test = "20.0.0"
+axum-test = "21.0.0"
